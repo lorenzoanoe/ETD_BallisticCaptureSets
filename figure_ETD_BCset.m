@@ -209,7 +209,13 @@ if any(any(abs(str.NRevALL)>=3))
     set(hN3, 'linewidth', 1.5, 'EdgeColor', [0.8500 0.3250 0.0980], 'FaceColor', [0.8500 0.3250 0.0980], 'FaceAlpha', 0.8);
 end
 
-plot(1,0,'k+','markersize',10, 'DisplayName','Jupiter')
+if sys == 1
+    plot(1,0,'k+','markersize',10, 'DisplayName','Jupiter')
+elseif sys == 8
+    plot(1,0,'k+','markersize',10, 'DisplayName','Moon')
+else
+    plot(1,0,'k+','markersize',10, 'DisplayName','M_2')
+end
 plot([L1,L2],[0,0],'ro', 'MarkerFaceColor', 'r','markersize',2, 'DisplayName','L1 and L2')
 axis equal
 axis square
@@ -222,4 +228,4 @@ ylabel('Y [LU]', 'Interpreter','latex')
 set(gca,'TickLabelInterpreter','latex','FontSize',16)
 box on
 set(gca,'FontSize',16)
-set(gcf,'Position',[20 90 800 900])
+set(gcf,'Position',[20 90 600 700])
