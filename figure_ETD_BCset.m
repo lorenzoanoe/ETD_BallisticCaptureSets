@@ -6,8 +6,8 @@
 %       sys=8 for Earth-Moon
 % - grid stepsize
 %       grid_scale = 400 for lower definition figures
-%       grid_scale = 800 for higher definition figures -> datasets file size is large and figure generation is slow
-%       grid_scale = 1400 for very high definition figures -> datasets are even larger. Not all the datasets for any GAMMA are provided
+%       N/A     grid_scale = 800 for higher definition figures -> datasets file size is large and figure generation is slow
+%       N/A     grid_scale = 1400 for very high definition figures -> datasets are even larger. Not all the datasets for any GAMMA are provided
 % - three-body energy parameter GAMMA
 %       GAMMA = 0 for Asymptotic Ballistic Capture (ABC)
 %       ...
@@ -18,8 +18,10 @@
 
 %% Definition of the inputs
 sys = 8 ;           % Earth-Moon system
-grid_scale = 400 ;  % lower definition, faster generation
 GAMMA = 0.84 ;
+
+% leave this value fixed. Only 
+grid_scale = 400 ;  % lower definition, faster generation
 
 % Systems list
 % 1 - Sun-Jupiter           mu = 9.54e-04
