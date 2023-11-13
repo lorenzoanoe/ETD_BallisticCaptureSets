@@ -21,10 +21,12 @@
 
 %% Definition of the inputs
 sys = 8 ;           % Earth-Moon system
-GAMMA = 0.84 ;
+% sys = 1 ;           % Sun-Jupiter system
 
-% leave this value fixed. Only 
+GAMMA = 0.84 ;      % three-body energy parameter to be chosen
+
 grid_scale = 400 ;  % lower definition, faster generation
+% % % grid_scale = 800 ;  % higher definition, slower generation --> only few datasets are available for the Earth-Moon system and Gamma = 0.80 : 0.04 : 1.36
 
 % Systems list
 % 1 - Sun-Jupiter           mu = 9.54e-04
