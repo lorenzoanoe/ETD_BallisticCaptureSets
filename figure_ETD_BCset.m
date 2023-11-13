@@ -84,7 +84,7 @@ l_x = length(vett_x20) ;
 l_y = length(vett_y20) ;
 
 % Upload Matlab structure for the capture set
-addpath(genpath('dataset'));
+addpath(append(pwd, "\datasets"));
 if grid_scale ~= 400
     load( append("strsys", num2str(sys), "Gamma", num2str(GAMMA*100), "V16_step", num2str(grid_scale), ".mat") )
 else
